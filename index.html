@@ -53,7 +53,7 @@
     let nowHour24 = moment().format('H');
     let nowHour12 = moment().format('h');
   
-    // set times for tesitng after hours
+    // set times for testng after hours
     if (test) {
       nowHour24 = 13;
       nowHour12 = 1;
@@ -66,7 +66,7 @@
     const saveIcon = "./images/save-regular.svg"; 
   
     // Get stored todos from localStorage
-    // Parsing the JSON string to an object
+    // Parsing the JSON string to object
     let storedPlans = JSON.parse(localStorage.getItem("storedPlans"));
   
     if (test) { console.log(storedPlans); }
@@ -101,11 +101,11 @@
       $rowDiv.addClass('plannerRow');
       $rowDiv.attr('hour-index',hour);
     
-      // Start building Time box portion of row
+      //Time box portion of row
       let $col2TimeDiv = $('<div>');
       $col2TimeDiv.addClass('col-md-2');
     
-      // create timeBox element (contains time)
+      // timeBox element (contains time)
       const $timeBoxSpn = $('<span>');
       // can use this to get value
       $timeBoxSpn.attr('class','timeBox');
@@ -121,7 +121,7 @@
         ampm = "am";
       }
       
-      // populate timeBox with time
+      //timeBox with time
       $timeBoxSpn.text(`${displayHour} ${ampm}`);
   
       // insert into col inset into timebox
@@ -129,7 +129,6 @@
       $col2TimeDiv.append($timeBoxSpn);
       // STOP building Time box portion of row
   
-      // START building input portion of row
       // build row components
       let $dailyPlanSpn = $('<input>');
   
@@ -141,7 +140,7 @@
       // access index from data array for hour 
       $dailyPlanSpn.val( planTextArr[index] );
       
-      // create col to control width
+
       let $col9IptDiv = $('<div>');
       $col9IptDiv.addClass('col-md-9');
   
@@ -150,7 +149,7 @@
       $col9IptDiv.append($dailyPlanSpn);
       // STOP building Time box portion of row
   
-      // START building save portion of row
+      //save portion of row
       let $col1SaveDiv = $('<div>');
       $col1SaveDiv.addClass('col-md-1');
   
@@ -159,7 +158,7 @@
       $saveBtn.attr('save-id',index);
       $saveBtn.attr('class',"far fa-save saveIcon");
       
-      // add col width and row component to row
+      //ol width and row component to row
       $rowDiv.append($col1SaveDiv);
       $col1SaveDiv.append($saveBtn);
       // STOP building save portion of row
@@ -190,7 +189,7 @@
     };
   
     // saves to local storage
-    // conclick function to listen for user clicks on plan area
+    // onclick function to listen for user clicks on plan area
     $(document).on('click','i', function(event) {
       event.preventDefault();  
   
