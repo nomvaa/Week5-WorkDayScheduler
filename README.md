@@ -22,4 +22,4 @@ WHEN I refresh the page<BR>
 THEN the saved events persist
   
 <h1>Link</h1><BR>
-https://nomvaa.github.io/Week5-WorkDayScheduler/
+https://nomvaa.github.io/WorkDayScheduler/
