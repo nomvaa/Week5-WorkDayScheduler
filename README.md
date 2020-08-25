@@ -1,6 +1,5 @@
 <h1>Third-Party APIs: Work Day Scheduler</h1><BR>
-Create a simple calendar application that allows the user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
-You'll need to use the Moment.js library to work with date and time. Be sure to read the documentation carefully and concentrate on using Moment.js in the browser.
+Created a simple work day calendar application that allows user to save events for each hour of the day. This application is run in the brower and feature dynamically updated HTML and CSS powered by JQuery. This Application also impliments the Moment.js library to work with date and time.   
 <BR>
   <BR><B>User Story</b><BR>
 AS AN employee with a busy schedule<BR>
